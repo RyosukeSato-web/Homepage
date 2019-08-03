@@ -1,0 +1,68 @@
+body{background:#ffffe0; font-family:"Helvetica Neue",Arial}
+
+#title{text-align:center}
+
+#basics{text-align:right}
+
+#abst_page{text-align:center}
+
+h2{background:linear-gradient(transparent 70%, #a7d6ff 70%);}
+h2:first-letter {font-size: 1.5em; color: #ff7f50;}
+
+/*
+h3{position:relative; line-height:1.4; display:inline-block;}
+h3:before, h3:after{position:relative; font-family:"Font Awesome 5 Free"; display:inline-block; font-size:1.0em; color: #ff6a6a;}
+h3:before{content:"\f053"; padding-right:0.5em}
+h3:after{content:"\f054"; padding-left:0.5em}
+*/
+
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    /*max-width: 400px;*/
+}
+
+.accbox label {
+    display: block;
+    /*margin: 1.5px 0;*/
+    /*padding : 11px 12px;*?
+    /*color :#2f8fcf;*/
+    font-weight: bold;
+    /*background :#a4cbf3;*/
+    /*cursor :pointer;*/
+    transition: all 0.5s;
+}
+
+.accbox label2 {
+    /*display: block;*/
+    /*margin: 1.5px 0;*/
+    /*padding : 11px 12px;*?
+    /*color :#2f8fcf;*/
+    /*font-weight: bold;*/
+    /*background :#a4cbf3;*/
+    /*cursor :pointer;*/
+    transition: all 0.5s;
+}
+
+.accbox input {
+    display: none;
+}
+
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    /*background: #eaeaea;*/
+    opacity: 1;
+}
+
+.yubi {
+  cursor : pointer;
+}
