@@ -9,6 +9,10 @@ body{background:#ffffe0; font-family:"Helvetica Neue",Arial}
 h2{background:linear-gradient(transparent 70%, #a7d6ff 70%);}
 h2:first-letter {font-size: 1.5em; color: #ff7f50;}
 
+div{
+    margin: 1.5em;
+}
+
 /*
 h3{position:relative; line-height:1.4; display:inline-block;}
 h3:before, h3:after{position:relative; font-family:"Font Awesome 5 Free"; display:inline-block; font-size:1.0em; color: #ff6a6a;}

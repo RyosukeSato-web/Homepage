@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Content</title>
+<style>
+    .content {
+        display: none;
+    }
+    #a:checked ~ #content #aContent,
+    #b:checked ~ #content #bContent,
+    #c:checked ~ #content #cContent {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<input type="radio" id="a" name="tabs" hidden>
+<input type="radio" id="b" name="tabs" hidden>
+<input type="radio" id="c" name="tabs" hidden>
+
+<a href="#a" onclick="clearRadio()">a</a>
+<a href="#b" onclick="clearRadio()">b</a>
+<a href="#c" onclick="clearRadio()">c</a>
+
+<div id="content">
+    <p id="aContent" class="content">Content for a</p>
+    <p id="bContent" class="content">Content for b</p>
+    <p id="cContent" class="content">Content for c</p>
+</div>
+
+<script>
+    function clearRadio() {
+        document.querySelectorAll('input[name="tabs"]').forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>
